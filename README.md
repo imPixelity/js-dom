@@ -111,6 +111,29 @@ Metode manipulasi class yang fleksibel dan aman:
 
 </details>
 
+<details>
+<summary style="font-weight:bold;font-size:18px;color:black;">DOM Events</summary>
+
+##### 1. Event Handler: `element.onclick = function`
+
+- Cara sederhana dan langsung untuk menetapkan aksi saat event terjadi (misalnya klik).
+- Hanya bisa menangani **satu event handler** per jenis event — penugasan baru akan menimpa yang lama.
+
+##### 2. `addEventListener(event, callback)`
+
+- Metode yang lebih fleksibel dan modern.
+- Bisa menambahkan **beberapa listener** untuk event yang sama tanpa menimpa yang lain.
+- Dapat digunakan untuk mendeteksi berbagai jenis event: `'click'`, `'mouseover'`, `'keydown'`, dll.
+
+##### 3. Perbedaan Penting
+
+| Metode              | Kelebihan                       | Kekurangan                    |
+| ------------------- | ------------------------------- | ----------------------------- |
+| `.onclick`          | Simpel dan mudah digunakan      | Menimpa fungsi sebelumnya     |
+| `.addEventListener` | Bisa banyak listener, fleksibel | Lebih verbose (lebih panjang) |
+
+</details>
+
 #### References
 
 [WPU - JavaScript dan DOM](https://www.youtube.com/playlist?list=PLFIM0718LjIWB3YRoQbQh82ZewAGtE2-3)
