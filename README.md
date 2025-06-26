@@ -71,6 +71,6 @@ Metode manipulasi class yang fleksibel dan aman:
 - `.replace(oldClass, newClass)` → Mengganti class lama dengan class baru.
 - `.item(index)` → Mengambil class berdasarkan index posisi.
 
-## Source
+## References
 
 [WPU - Javascript dan DOM](https://www.youtube.com/playlist?list=PLFIM0718LjIWB3YRoQbQh82ZewAGtE2-3)
