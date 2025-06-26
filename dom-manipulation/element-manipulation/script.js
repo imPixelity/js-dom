@@ -1,4 +1,4 @@
-// DOM Manipulation
+// DOM Manipulation Element
 // element.innerHTML
 const judul = document.getElementById("judul");
 judul.innerHTML = "<b>Hello WORLD";
