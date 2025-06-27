@@ -114,7 +114,7 @@ Metode manipulasi class yang fleksibel dan aman:
 <details>
 <summary style="font-weight:bold;font-size:18px;color:black;">DOM Events</summary>
 
-##### 1. Event Handler: `element.onclick = function`
+##### 1. Event Handler: `element.on<events> = function`
 
 - Cara sederhana dan langsung untuk menetapkan aksi saat event terjadi (misalnya klik).
 - Hanya bisa menangani **satu event handler** per jenis event — penugasan baru akan menimpa yang lama.
@@ -129,7 +129,7 @@ Metode manipulasi class yang fleksibel dan aman:
 
 | Metode              | Kelebihan                       | Kekurangan                    |
 | ------------------- | ------------------------------- | ----------------------------- |
-| `.onclick`          | Simpel dan mudah digunakan      | Menimpa fungsi sebelumnya     |
+| `.on<events>`       | Simpel dan mudah digunakan      | Menimpa fungsi sebelumnya     |
 | `.addEventListener` | Bisa banyak listener, fleksibel | Lebih verbose (lebih panjang) |
 
 </details>
