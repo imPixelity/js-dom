@@ -25,3 +25,19 @@ function createButton(color) {
 for (let i = 0; i < buttonList.length; i++) {
   createButton(buttonList[i]);
 }
+
+// Generating random hex code for random button
+const randomButton = document.getElementById("randomButton");
+randomButton.addEventListener("click", function () {
+  randNum = [];
+  for (let i = 0; i < 3; i++) {
+    randNum[i] = Math.floor(Math.random() * 256);
+  }
+  document.body.style.backgroundColor = `rgb(${randNum[0]}, ${randNum[1]}, ${randNum[2]})`;
+});
+
+// Reset button
+const resetButton = document.getElementById("resetButton");
+resetButton.addEventListener("click", function () {
+  document.body.style.backgroundColor = "transparent";
+});
