@@ -13,7 +13,7 @@ function createButton(color) {
     const currentBg = document.body.style.backgroundColor;
     const clickedColor = button.style.backgroundColor;
     if (currentBg === clickedColor) {
-      document.body.style.backgroundColor = "transparent";
+      document.body.style.backgroundColor = "white";
     } else {
       document.body.style.backgroundColor = color;
     }
@@ -39,5 +39,16 @@ randomButton.addEventListener("click", function () {
 // Reset button
 const resetButton = document.getElementById("resetButton");
 resetButton.addEventListener("click", function () {
-  document.body.style.backgroundColor = "transparent";
+  document.body.style.backgroundColor = "white";
 });
+
+// HTMLCollection and NodeList cant do addEventListener, so need to loop them each individually
+const slider = document.querySelectorAll(".slider-zone input");
+for (let i = 0; i < slider.length; i++) {
+  slider[i].addEventListener("input", function () {
+    const r = slider[0].value;
+    const g = slider[1].value;
+    const b = slider[2].value;
+    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  });
+}

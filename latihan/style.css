@@ -21,3 +21,26 @@ button {
   color: white;
   text-align: center;
 }
+
+.slider-zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.slider-zone ul {
+  background-color: white;
+  border: 1px solid black;
+  list-style-type: none;
+}
+
+.slider-zone ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-zone ul li span {
+  text-align: right;
+  width: 48px;
+}
