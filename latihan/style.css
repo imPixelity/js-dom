@@ -33,6 +33,7 @@ button {
   background-color: white;
   border: 1px solid black;
   list-style-type: none;
+  padding-right: 36px;
 }
 
 .slider-zone ul li {

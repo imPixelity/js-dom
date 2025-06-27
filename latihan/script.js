@@ -43,7 +43,7 @@ resetButton.addEventListener("click", function () {
 });
 
 // HTMLCollection and NodeList cant do addEventListener, so need to loop them each individually
-const slider = document.querySelectorAll(".slider-zone input");
+const slider = document.querySelectorAll(".slider-zone input[type='range']");
 for (let i = 0; i < slider.length; i++) {
   slider[i].addEventListener("input", function () {
     const r = slider[0].value;
@@ -52,3 +52,9 @@ for (let i = 0; i < slider.length; i++) {
     document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
   });
 }
+
+// document.body.addEventListener("mouseover", function (e) {
+//   const xPos = Math.floor((e.clientX / window.innerWidth) * 256);
+//   const yPos = Math.floor((e.clientY / window.innerHeight) * 256);
+//   document.body.style.backgroundColor = `rgb(${xPos}, ${yPos}, 0)`;
+// });
