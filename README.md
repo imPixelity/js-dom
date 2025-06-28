@@ -94,7 +94,7 @@ Metode manipulasi class yang fleksibel dan aman:
 - Menambahkan node anak ke dalam node induk.
 - Jika node sudah ada di tempat lain, node tersebut akan dipindahkan.
 
-##### 4. `node.insertBefore(newNode, referenceNode)`
+##### 4. `parentNode.insertBefore(newNode, referenceNode)`
 
 - Menyisipkan `newNode` sebelum `referenceNode` dalam node induk.
 - Digunakan untuk menyisipkan node di posisi tertentu.
