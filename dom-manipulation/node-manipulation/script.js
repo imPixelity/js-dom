@@ -7,7 +7,7 @@ pBaru.appendChild(textPBaru);
 const sectionA = document.getElementById("a");
 sectionA.appendChild(pBaru);
 
-// node.insertBefore()
+// parentNode.insertBefore()
 const liBaru = document.createElement("li");
 const textLiBaru = document.createTextNode("Item Baru");
 
