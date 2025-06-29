@@ -1,7 +1,7 @@
 const elementBtn = document.querySelectorAll(".player-pick ul li");
 const compPickImg = document.querySelector(".wrapper img");
-const resultBox = document.querySelector(".result-box");
 const result = document.querySelector(".result-box p");
+const resultBox = document.querySelector(".result-box");
 const resultBoxComp = resultBox.getElementsByTagName("p")[1];
 
 const elementList = [
@@ -25,7 +25,6 @@ function playGame(playerElement) {
     compElement.element[0].toUpperCase() + compElement.element.slice(1)
   }${compElement.icon}`;
   compPickImg.setAttribute("src", `img/${compElement.element}.svg`);
-  compPickImg.style.width = "28px";
   resultBoxComp.classList.add("visible");
 }
 

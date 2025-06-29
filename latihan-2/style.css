@@ -178,3 +178,7 @@ body {
 ul li img {
   cursor: pointer;
 }
+
+.wrapper img {
+  width: 28px;
+}
