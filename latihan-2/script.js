@@ -22,6 +22,7 @@ function playGame(playerElement) {
   } else if (playerElement.element === compElement.winAgainst) {
     result.innerHTML = "Ain't no way you lose vro\u{1F940}";
   }
+
   resultBoxComp.innerHTML = `Computer picked: ${
     compElement.element[0].toUpperCase() + compElement.element.slice(1)
   }${compElement.icon}`;
@@ -30,12 +31,6 @@ function playGame(playerElement) {
   resultBoxComp.style.display = "block";
 }
 
-fireBtn.addEventListener("click", function () {
-  playGame(elementList[0]);
-});
-waterBtn.addEventListener("click", function () {
-  playGame(elementList[1]);
-});
-grassBtn.addEventListener("click", function () {
-  playGame(elementList[2]);
+[fireBtn, waterBtn, grassBtn].forEach((btn, i) => {
+  btn.addEventListener("click", () => playGame(elementList[i]));
 });
