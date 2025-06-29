@@ -182,3 +182,18 @@ ul li img {
 .wrapper img {
   width: 28px;
 }
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  font-size: 24px;
+}
+
+.scoreboard .player-score {
+  text-align: left;
+}
+
+.scoreboard .comp-score {
+  text-align: right;
+}
