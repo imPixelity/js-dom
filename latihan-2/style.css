@@ -167,6 +167,14 @@ body {
   flex-direction: column;
 }
 
+.result-box-comp {
+  display: none;
+}
+
+.result-box-comp.visible {
+  display: block;
+}
+
 ul li img {
   cursor: pointer;
 }

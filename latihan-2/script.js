@@ -1,6 +1,4 @@
-const fireBtn = document.getElementById("fire-btn");
-const waterBtn = document.getElementById("water-btn");
-const grassBtn = document.getElementById("grass-btn");
+const elementBtn = document.querySelectorAll(".player-pick ul li");
 const compPickImg = document.querySelector(".wrapper img");
 const resultBox = document.querySelector(".result-box");
 const result = document.querySelector(".result-box p");
@@ -19,7 +17,7 @@ function playGame(playerElement) {
     result.innerHTML = "Draw!\u{1F91D}";
   } else if (playerElement.winAgainst === compElement.element) {
     result.innerHTML = "You won!\u{1F3C6}";
-  } else if (playerElement.element === compElement.winAgainst) {
+  } else {
     result.innerHTML = "Ain't no way you lose vro\u{1F940}";
   }
 
@@ -28,9 +26,9 @@ function playGame(playerElement) {
   }${compElement.icon}`;
   compPickImg.setAttribute("src", `img/${compElement.element}.svg`);
   compPickImg.style.width = "28px";
-  resultBoxComp.style.display = "block";
+  resultBoxComp.classList.add("visible");
 }
 
-[fireBtn, waterBtn, grassBtn].forEach((btn, i) => {
+elementBtn.forEach((btn, i) => {
   btn.addEventListener("click", () => playGame(elementList[i]));
 });
