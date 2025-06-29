@@ -1,6 +1,7 @@
 const fireBtn = document.getElementById("fire-btn");
 const waterBtn = document.getElementById("water-btn");
 const grassBtn = document.getElementById("grass-btn");
+const compPickImg = document.querySelector(".wrapper img");
 const resultBox = document.querySelector(".result-box");
 const result = document.querySelector(".result-box p");
 const resultBoxComp = resultBox.getElementsByTagName("p")[1];
@@ -21,7 +22,11 @@ function playGame(playerElement) {
   } else if (playerElement.element === compElement.winAgainst) {
     result.innerHTML = "Ain't no way you lose vro\u{1F940}";
   }
-  resultBoxComp.innerHTML = `Computer picked: ${compElement.element}${compElement.icon}`;
+  resultBoxComp.innerHTML = `Computer picked: ${
+    compElement.element[0].toUpperCase() + compElement.element.slice(1)
+  }${compElement.icon}`;
+  compPickImg.setAttribute("src", `img/${compElement.element}.svg`);
+  compPickImg.style.width = "28px";
   resultBoxComp.style.display = "block";
 }
 

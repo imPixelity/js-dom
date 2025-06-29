@@ -95,19 +95,62 @@ body {
   width: 32px;
 }
 
-.player-pick ul li:nth-child(2) img {
-  width: 28px;
-  filter: brightness(0) saturate(100%) invert(39%) sepia(95%) saturate(5848%)
-    hue-rotate(212deg) brightness(99%) contrast(110%);
+.player-pick ul li:nth-child(1) {
+  transition: all 0.3s ease-in-out;
+}
+
+.player-pick ul li:nth-child(1):hover {
+  background-color: #ffcccc;
 }
 
 .player-pick ul li:nth-child(1) img {
-  filter: invert(25%) sepia(100%) saturate(10000%) hue-rotate(0deg);
+  filter: brightness(0) saturate(100%) invert(58%) sepia(53%) saturate(3598%)
+    hue-rotate(333deg) brightness(105%) contrast(101%);
+  transition: all 0.3s ease-in-out;
+}
+
+.player-pick ul li:nth-child(1):hover img {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(76%) saturate(2475%)
+    hue-rotate(344deg) brightness(80%) contrast(95%);
+}
+
+.player-pick ul li:nth-child(2) {
+  transition: all 0.3s ease-in-out;
+}
+
+.player-pick ul li:nth-child(2):hover {
+  background-color: #bbdefb;
+}
+
+.player-pick ul li:nth-child(2) img {
+  width: 28px;
+  filter: brightness(0) saturate(100%) invert(61%) sepia(48%) saturate(6322%)
+    hue-rotate(184deg) brightness(98%) contrast(95%);
+  transition: all 0.3s ease-in-out;
+}
+
+.player-pick ul li:nth-child(2):hover img {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(71%) saturate(1029%)
+    hue-rotate(178deg) brightness(86%) contrast(96%);
+}
+
+.player-pick ul li:nth-child(3) {
+  transition: all 0.3s ease-in-out;
+}
+
+.player-pick ul li:nth-child(3):hover {
+  background-color: #c8e6c9;
 }
 
 .player-pick ul li:nth-child(3) img {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(17%) saturate(1579%)
-    hue-rotate(83deg) brightness(85%) contrast(88%);
+  filter: brightness(0) saturate(100%) invert(51%) sepia(7%) saturate(3903%)
+    hue-rotate(72deg) brightness(115%) contrast(80%);
+  transition: all 0.3s ease-in-out;
+}
+
+.player-pick ul li:nth-child(3):hover img {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(4%) saturate(5641%)
+    hue-rotate(66deg) brightness(99%) contrast(89%);
 }
 
 .result-box {
