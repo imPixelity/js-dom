@@ -167,6 +167,27 @@ Metode manipulasi class yang fleksibel dan aman:
 - Mengembalikan elemen HTML sebelum elemen saat ini.
 - Mengabaikan node non-elemen seperti teks atau komentar.
 
+---
+
+##### 1. `Prevent Default`
+
+- `event.preventDefault()`
+
+- Mencegah aksi bawaan dari elemen HTML.
+- Umumnya digunakan untuk:
+  - Link agar tidak berpindah halaman.
+  - Form agar tidak melakukan submit otomatis.
+- Harus dipanggil di dalam fungsi event handler.
+
+##### 2. `Event Bubbling`
+
+- `event.stopPropagation()` → Menghentikan aliran event ke elemen induk.
+- `event.stopImmediatePropagation()` → Menghentikan bubbling dan juga mencegah listener lain di elemen yang sama.
+
+- Merupakan mekanisme propagasi event dari elemen target ke elemen induk.
+- Alur mengalir dari elemen terdalam (child) ke luar (parent).
+- Event yang terjadi pada elemen anak dapat memicu event di elemen induknya.
+
 </details>
 
 #### References
