@@ -181,7 +181,7 @@ Metode manipulasi class yang fleksibel dan aman:
 
 ##### 2. `Event Bubbling`
 
-`event.stopPropagation()` → Menghentikan aliran event ke elemen induk.
+`event.stopPropagation()` → Menghentikan aliran event ke elemen induk.  
 `event.stopImmediatePropagation()` → Menghentikan bubbling dan juga mencegah listener lain di elemen yang sama.
 
 - Merupakan mekanisme propagasi event dari elemen target ke elemen induk.
