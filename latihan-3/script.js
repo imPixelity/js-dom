@@ -34,13 +34,14 @@ container.addEventListener("click", (e) => {
     if (!isClickable) return;
     isClickable = false;
 
-    highlight.src = e.target.src;
     highlight.classList.add("fade");
+    highlight.src = e.target.src;
 
     imageList.forEach((image) => {
-      if (image.classList.contains("active")) {
-        image.classList.remove("active");
-      }
+      // if (image.classList.contains("active")) {
+      //   image.classList.remove("active");
+      // }
+      image.className = "imageBox";
     });
 
     setTimeout(() => {
