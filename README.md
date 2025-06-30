@@ -134,6 +134,41 @@ Metode manipulasi class yang fleksibel dan aman:
 
 </details>
 
+<details>
+<summary style="font-weight:bold;font-size:18px;color:black;">DOM Traversal</summary>
+
+##### 1. `parentNode`
+
+- Mengembalikan node induk dari elemen saat ini.
+- Termasuk elemen, teks, atau komentar (misalnya spasi).
+
+##### 2. `parentElement`
+
+- Mengembalikan elemen induk dari elemen saat ini.
+- Nilai akan `null` jika parent bukan elemen HTML.
+
+##### 3. `nextSibling`
+
+- Mengembalikan node setelah node saat ini.
+- Termasuk elemen, teks, atau komentar (misalnya spasi).
+
+##### 4. `nextElementSibling`
+
+- Mengembalikan elemen HTML setelah elemen saat ini.
+- Mengabaikan node non-elemen seperti teks atau komentar.
+
+##### 5. `previousSibling`
+
+- Mengembalikan node sebelum node saat ini.
+- Termasuk elemen, teks, atau komentar (misalnya spasi).
+
+##### 6. `previousElementSibling`
+
+- Mengembalikan elemen HTML sebelum elemen saat ini.
+- Mengabaikan node non-elemen seperti teks atau komentar.
+
+</details>
+
 #### References
 
 [WPU - JavaScript dan DOM](https://www.youtube.com/playlist?list=PLFIM0718LjIWB3YRoQbQh82ZewAGtE2-3)
