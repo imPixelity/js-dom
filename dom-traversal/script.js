@@ -1,10 +1,29 @@
 // DOM Traversal
 const closeBtn = document.querySelectorAll(".close");
 
+// Prevent Default || Event Bubbling
 closeBtn.forEach((el) => {
   el.addEventListener("click", (e) => {
     e.target.parentElement.remove();
+    e.preventDefault();
+    // e.stopPropagation();
   });
+});
+
+const cards = document.querySelectorAll(".card");
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    alert("test");
+  });
+});
+
+const container = document.querySelector(".container");
+container.addEventListener("click", (e) => {
+  if (e.target.className === "close") {
+    e.target.parentElement.remove();
+    e.preventDefault();
+    alert("testt");
+  }
 });
 
 const uName = document.querySelector(".name");

@@ -31,6 +31,10 @@ body {
   position: relative;
 }
 
+.card a {
+  text-decoration: none;
+}
+
 .card .nama,
 .card .telp {
   display: block;
