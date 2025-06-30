@@ -171,7 +171,7 @@ Metode manipulasi class yang fleksibel dan aman:
 
 ##### 1. `Prevent Default`
 
-- `event.preventDefault()`
+`event.preventDefault()`
 
 - Mencegah aksi bawaan dari elemen HTML.
 - Umumnya digunakan untuk:
@@ -181,8 +181,8 @@ Metode manipulasi class yang fleksibel dan aman:
 
 ##### 2. `Event Bubbling`
 
-- `event.stopPropagation()` → Menghentikan aliran event ke elemen induk.
-- `event.stopImmediatePropagation()` → Menghentikan bubbling dan juga mencegah listener lain di elemen yang sama.
+`event.stopPropagation()` → Menghentikan aliran event ke elemen induk.
+`event.stopImmediatePropagation()` → Menghentikan bubbling dan juga mencegah listener lain di elemen yang sama.
 
 - Merupakan mekanisme propagasi event dari elemen target ke elemen induk.
 - Alur mengalir dari elemen terdalam (child) ke luar (parent).
