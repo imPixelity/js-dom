@@ -37,12 +37,19 @@ container.addEventListener("click", (e) => {
     highlight.classList.add("fade");
     highlight.src = e.target.src;
 
-    imageList.forEach((image) => {
-      // if (image.classList.contains("active")) {
-      //   image.classList.remove("active");
-      // }
-      image.className = "imageBox";
-    });
+    // imageList.forEach((image) => {
+    // if (image.classList.contains("active")) {
+    //   image.classList.remove("active");
+    // }
+    //   image.className = "imageBox";
+    // });
+
+    for (const image of imageList) {
+      if (image.classList.contains("active")) {
+        image.classList.remove("active");
+        break;
+      }
+    }
 
     setTimeout(() => {
       highlight.classList.remove("fade");
