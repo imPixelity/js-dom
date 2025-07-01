@@ -37,12 +37,12 @@ container.addEventListener("click", (e) => {
     highlight.classList.add("fade");
     highlight.src = e.target.src;
 
-    for (const image of imageList) {
-      if (image.classList.contains("active")) {
-        image.classList.remove("active");
-        break;
-      }
-    }
+    imageList.forEach((image) => {
+      // if (image.classList.contains("active")) {
+      //   image.classList.remove("active");
+      // }
+      image.className = "imageBox";
+    });
 
     setTimeout(() => {
       highlight.classList.remove("fade");
